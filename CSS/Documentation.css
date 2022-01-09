@@ -2,7 +2,6 @@ body {
     display: flexbox;
     flex-flow: row;
     align-content: space-between;
-    background: chartreuse;
 }
 
 /* Loader Div */
@@ -39,7 +38,7 @@ body {
 /* Pagination Buttons */
 .ButtonsDiv {
     /* background: #7fff0055; */
-    height: 10vh;
+    height: 10em;
     display: flex;
     justify-content: space-evenly;
     margin: 20px;
@@ -48,13 +47,13 @@ body {
 
 .NavButtons {
     transition: 1s ease-in-out;
-    width: 100%;
-    height: 100%;
+    width: 33vw;
+    height: 10vh;
     border-radius: 40px;
     border: groove 2px #A7EE8E;
-    padding: 20px;
+    padding: 1vw;
     margin: 0px 5px;
-    font-size: 1em;
+    font-size: 2vh;
     font-weight: 550;
     color: snow;
     background: transparent;
@@ -63,7 +62,7 @@ body {
 .NavButtons:hover {
     transition: 1s ease-out;
     background: #A7EE8E;
-    font-size: 1.1em;
+    font-size: 2.2vh;
     transform: translateY(-1vh);
     letter-spacing: 0.1vw;
     border: transparent;
@@ -73,7 +72,7 @@ body {
 .NavButtons:active {
     transition: 1s ease-in;
     background: #1A3C58;
-    font-size: 1.2em;
+    font-size: 2.3vh;
     color: #A7EE8E;
 }
 

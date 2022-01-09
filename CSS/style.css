@@ -92,8 +92,14 @@ html,
 .Main {
     display: flex;
     height: inherit;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     align-content: flex-end;
     justify-content: space-evenly;
+}
+.Main::-webkit-scrollbar {
+    display: none;
 }
 
 /* Download Button */

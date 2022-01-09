@@ -1,6 +1,6 @@
 {
-    "name": "Hello World",
-    "short_name": "Hello",
+    "name": "Presentation PWA (Install for PWA-speed)",
+    "short_name": "PWA",
     "icons": [{
       "src":"images/MPU_Logo_16.png",
       "sizes": "16x16",

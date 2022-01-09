@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../CSS/Game.css" type="text/css">
+    </head>
+    <body class="body">
+        <!-- <div id="app">
+            <transition v-on:enter="enter" v-bind:css="false" appear>
+            <div class="butter-cheese-eggs" v-show="true">
+                <div v-for="(block, index) in grid" @click="select(index)">
+                <block :figure.sync="block.figure" />
+                </div>
+            </div>
+            </transition>
+            
+            <transition v-on:enter="enterWin" v-bind:css="false">
+            <win v-show="winner" :click-handler="restart"></win>
+            </transition>
+        </div>
+        
+        <template id="block">
+            <div class="block">
+            <transition v-on:enter="enter" v-bind:css="false">
+                <span v-show="figure > -1">{{ fig }}</span>
+            </transition>
+            </div>
+        </template>
+        
+        <template id="win">
+            <div class="win">
+            <h2>Win</h2>
+            <button @click="clickHandler">Play again</button>
+            </div>
+        </template> -->
+          <div id="window" onclick="jump()">
+              <div id="character"></div>
+
+              <div id="block"></div>
+          </div>
+          <p>Score: <span id="scoreSpan"></span></p>
+
+        <script src="../Js/Game.js"></script>
+    </body>
+</html>

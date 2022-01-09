@@ -1,0 +1,12 @@
+#PDFFrame {
+    height: 60vh; 
+    width: 80vw; 
+    border: transparent; 
+    overflow: hidden; 
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#PDFFrame::-webkit-scrollbar {
+    display: none;
+}
