@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>
-            Hello World
+            PWA presentation
         </title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="manifest" href="manifest.json">
@@ -19,11 +19,39 @@
     </head>
     <body class="fullscreen">
         <div class="container">
-            <h1 class="title">Hello World!</h1>
+            <div class="Nav">
+                <div class="AppName">
+                    <h1 class="title">Application</h1>
+                    <button class="DownloadButton"></button>
+                </div>
 
-            <button id="InstallPWAButton" >Install APP</button>
-            
+                <div class="Tabbar">
+                    <button id="FirstTab" class="TabbarButtons" onclick="TabbarNavigation(this.id)">
+                        HomePage
+                    </button>
+                    <button id="SecondTab" class="TabbarButtons" onclick="TabbarNavigation(this.id)">
+                        Documentation
+                    </button>
+                    <button id="ThirdTab" class="TabbarButtons" onclick="TabbarNavigation(this.id)">
+                        Tic-Tac-Toe
+                    </button>
+                    <button id="FourthTab" class="TabbarButtons" onclick="TabbarNavigation(this.id)">
+                        Application
+                    </button>
+                </div>
+            </div>
+
+            <main class="Main">
+                <button id="InstallPWAButton" >Install APP</button>
+
+            </main>
         </div>
-        <script src="Js/main.js"></script>
+        <!--Link Latest JQuery without downloading library-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <!-- Link Lottie animation images-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js" integrity="sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="Js/TabbarNavigation.js" ></script>
+        <script src="Js/main.js" type="module"></script>
     </body>
 </html>

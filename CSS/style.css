@@ -14,14 +14,107 @@ html,
 
 /* Center the content in the browser window */
 .container {
+    display: flex;
+    flex-flow: column;
+    position: sticky;
+    width: inherit;
+    height: inherit;
     margin: auto;
     text-align: center;
+    background-color: #466174;
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    color: #A7EE8E;
+    width: 90vw;
 }
 
-#InstallPWAButton {
-    background-color: cornflowerblue;
+
+.Nav {
+    background-color: #1A3C58;
+}
+
+/* Styling of Header */
+.AppName {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Tabbar Buttons Styling */
+.Tabbar {
+    display: flex;
+    width: inherit;
+    justify-content: space-evenly;
+}
+
+.TabbarButtons {
+    transition: 0.5s ease-in-out;
+    padding: 10px;
+    width: 100%;
+    height: 10vh;
+    visibility: visible;
+    background: transparent;
+    color: snow;
+    font-size: 2vmax;
+    text-shadow: 1px 1px #466174;
+    border: transparent;
+}
+
+.TabbarButtons:hover {
+    transition: 0.5s ease-in-out;
+    box-shadow: 1px 0px 1vh 0.5vh #A7EE8E;
+    text-shadow: 0px 0px transparent;
+    background: #A7EE8E;
+    color: #000;
+}
+
+.TabbarButtons:focus {
+    transition: all 1s ease-in;
+    background: #466174;
+    color: #A7EE8E;
+    box-shadow: none;
+    text-shadow: transparent;
+    font-size: 2.3vmax;
+    outline: 0px;
+}
+
+.TabbarButtons:active {
+    transition: all 1s ease-in;
+    background: #466174;
+    color: #A7EE8E;
+    box-shadow: none;
+    text-shadow: transparent;
+    font-size: 2.3vmax;
+    outline: 0px;
+}
+/* Loader Page Styling */
+.Main {
+    display: flex;
+    height: inherit;
+    align-content: flex-end;
+    justify-content: space-evenly;
+}
+
+/* Download Button */
+.DownloadButton {
+    transition: 1s ease-out;
+    background: transparent;
+    border-radius: 50px;
+    border: transparent;
+    width: inherit;
+    height: 10vh;
+    padding: 10px;
+}
+
+.DownloadButton:hover {
+    transition: 1s ease-in-out;
+    box-shadow: 0px 0px 2vh  #A7EE8Eaa;
+    margin-top: 1vh;
+    margin-right: 1vh;
+}
+
+.DownloadButton:active {
+    transition: 1s ease-in;
+
 }
