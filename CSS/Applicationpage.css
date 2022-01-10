@@ -1,0 +1,38 @@
+.window {
+    /* background: red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* Pre-Image Texts */
+.Header {
+    font-size: 3vh;
+    background: cornsilk;
+}
+
+.Warning {
+    font-size: 10vh;
+    background: cornflowerblue;
+}
+
+/* Middle Animation */
+.Animation {
+    background: slateblue;
+    height: 50vh;
+}
+
+/* Bottom Container */
+.Continue {
+    background: slategray;
+    width: inherit;
+    height: 15vh;
+}
+
+#ContinueButton {
+    background: transparent;
+    width: inherit;
+    height: inherit;
+    font-size: 5vh;
+}
