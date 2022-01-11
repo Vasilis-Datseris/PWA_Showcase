@@ -11,8 +11,4 @@ let animation = lottieWeb.loadAnimation({
     name: "Stats Loading..",
 });
 
-animation.goToAndStop(160,true);
-
-function showStats() {
-
-}
+// animation.goToAndStop(160,true);

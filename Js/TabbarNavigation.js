@@ -7,17 +7,19 @@ function TabbarNavigation(id) {
             $(".Main").html(data);
         });
     else if (id === "SecondTab")
-        Tab = $.get("Pages/Documentation.html", (data) => {
-            $(".Main").html(data);
-        });
+    Tab = $.get("Pages/Documentation.html", (data) => {
+        $(".Main").html(data);
+    });
     else if (id === "ThirdTab")
-        Tab = $.get("Pages/Game.html", (data) => {
-            $(".Main").html(data);
-        });
+    Tab = $.get("Pages/Game.html", (data) => {
+        $(".Main").html(data);
+    });
     else if (id === "FourthTab")
-        Tab = $.get("Pages/Applicationpage.html", (data) => {
-            $(".Main").html(data);
-        });
-
+    Tab = $.get("Pages/Applicationpage.html", (data) => {
+        $(".Main").html(data);
+    });
+    
+    $('.TabbarButtons').removeClass('active');
+    $('#'+id).toggleClass('active');
     $('.Main').html(`<div>${Tab}</div>`);
 }

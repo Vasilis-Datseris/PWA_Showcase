@@ -79,7 +79,7 @@ html,
     outline: 0px;
 }
 
-.TabbarButtons:active {
+.TabbarButtons.active {
     transition: all 1s ease-in;
     background: #466174;
     color: #A7EE8E;
@@ -111,6 +111,7 @@ html,
     width: inherit;
     height: 10vh;
     padding: 10px;
+    color: transparent;
 }
 
 .DownloadButton:hover {

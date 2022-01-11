@@ -16,6 +16,7 @@ window.onload = () => {
 //Install PWA event 
 let closedPrompt;
 let installButton = document.getElementsByClassName('DownloadButton')[0];
+// installButton.innerHTML = '';
 var state = true;
 
 window.addEventListener('beforeinstallprompt', (event) => {
@@ -63,5 +64,5 @@ installButton.addEventListener('click', async () => {
 $('#SecondTab').click(function(){
     console.log('hey!');
     let activeTab = document.getElementById('#SecondTab');
-    activeTab.style.background = "#466174";
+    // activeTab.style.background = "#466174";
 });

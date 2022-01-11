@@ -1,4 +1,4 @@
-let PageCounter = 1; // Starting Page
+let PageCounter = 0; // Starting Page
 let maxCounter = 3; //Max Pages of Document
 
 document.getElementById('PreviousButton').style.visibility = "hidden";
@@ -40,30 +40,41 @@ function setPage (counter) {
             break
         default :
             break
-    }
-
-    ContentLoad(direction);
+        }
+        
+        ContentLoad(direction);
 }
 
 //Content load (Add Static Routing here)
 function ContentLoad(id) {
-    let content;
-
-    if (id === "Intro") 
+        let content;
+        
+        if (id === "Intro") 
         content = $.get("../Pages/Content/Intro.Html", (data) => {
             $(".ContentLoader").html(data);
             PageCounter = 1;
+            document.getElementById('PreviousButton').style.visibility = "hidden";
+            document.getElementById('NextButton').style.visibility = "visible";
+
         })
-    else if (id === "PWA")
+        else if (id === "PWA")
         content = $.get("../Pages/Content/PWA.Html", (data) => {
             $(".ContentLoader").html(data);
             PageCounter = 2;
+            document.getElementById('PreviousButton').style.visibility = "visible";
+            document.getElementById('NextButton').style.visibility = "visible";
+
         })
-    else if (id === "Project")
+        else if (id === "Project")
         content = $.get("../Pages/Content/Project.Html", (data) => {
             $(".ContentLoader").html(data);
             PageCounter = 3;
+            document.getElementById('NextButton').style.visibility = "hidden";
+            document.getElementById('PreviousButton').style.visibility = "visible";
+            
         })
-
+    
+    $('.ContentView').removeClass('active');
+    $('#'+id).toggleClass('active');
     $(".ContentLoader").html(`<div>${content}</div>`);
 }

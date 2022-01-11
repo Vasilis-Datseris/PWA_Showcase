@@ -17,11 +17,13 @@ body {
 /* Paragraph Layout */
 .ContentLoader {
     height: inherit;
+    width: 80vw;
 }
 .Text {
     /* background: radial-gradient(#00000033 10%, transparent 70%); */
     /* background: red; */
     height: 50vh;
+    width: inherit;
     overflow: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -106,7 +108,7 @@ body {
     transform: scaleX(2vw);
 }
 
-.ContentView:active {
+.ContentView.active {
     transition: 1s ease-in;
     background: #A7EE8E;
     box-shadow: none;

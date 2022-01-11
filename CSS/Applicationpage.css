@@ -9,30 +9,102 @@
 /* Pre-Image Texts */
 .Header {
     font-size: 3vh;
-    background: cornsilk;
+    color: snow;
 }
 
 .Warning {
-    font-size: 10vh;
-    background: cornflowerblue;
+    font-size: 8vh;
+    color: black;
+    text-shadow: 0px 0px 3px orangered;
 }
 
 /* Middle Animation */
 .Animation {
-    background: slateblue;
-    height: 50vh;
+    height: 40vh;
 }
 
 /* Bottom Container */
 .Continue {
-    background: slategray;
     width: inherit;
     height: 15vh;
 }
 
 #ContinueButton {
-    background: transparent;
-    width: inherit;
+    transition: 1s ease-out;
+    background: #1A3C58aa;
+    width: 80%;
     height: inherit;
     font-size: 5vh;
+    color: snow;
+    border-radius: 50px;
+    border: 0px none;
+    padding: auto;
+}
+
+#ContinueButton:hover {
+    transition: 1s ease-in-out;
+    color: black;
+    background: #A7EE8E88;
+    box-shadow: 0px 0px 2vh 1px #A7EE8E88;
+    transform: translateY(-1vh);
+}
+
+#ContinueButton:active {
+    transition: 1s ease-in;
+    color: orangered;
+    background: #A7EE8E;
+    box-shadow: 0px 0px 2vh 1px #A7EE8E;
+}
+
+/* After Confirmation Elements */
+.Main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.Cards {
+    transition: 0.5s ease-in-out;
+    background: #1A3C5888;
+    border-radius: 50px;
+    border: 1.5px dashed #A7EE8Eaa;
+    font-size: 2.5vh;
+    width: 40vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 0px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cards:hover {
+    transition: 2s ease-in-out;
+    background-color: #1A3C58;
+    border: 1.5px solid #A7EE8E;
+    box-shadow: 0px 0px 0.5vw 1px #A7EE8E;
+    color: snow;
+}
+
+.Instructions {
+    transition: 1s ease-out;
+    background: linear-gradient(transparent, #4169e1aa, transparent);
+    height: 40vh;
+    color: black;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Instructions:hover {
+    transition: 1s ease-in-out;
+    color: orangered;
+    background: #A7EE8E;
+    box-shadow: 0px 0px 3vh 5vh inset #466174;
+    
+}
+
+#secondCard {
+    font-size: 2.4vh;
 }
