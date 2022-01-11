@@ -59,10 +59,3 @@ installButton.addEventListener('click', async () => {
         
     state = true;
 });
-
-//Keep Tab active until another is pressed
-$('#SecondTab').click(function(){
-    console.log('hey!');
-    let activeTab = document.getElementById('#SecondTab');
-    // activeTab.style.background = "#466174";
-});
