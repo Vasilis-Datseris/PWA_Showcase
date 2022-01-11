@@ -24,7 +24,7 @@ console.log("ip:"+window.location.hostname + " " + window.location.host + " port
 
 function fillFirstCard () {
     let card = document.getElementById('firstCard');
-    card.innerHTML = `LOCAL<ul><li>IP: ${window.location.hostname === "localhost"? 'ipV4' : window.location.hostname}</li><li>Mask: ${submask}</li><li>Port: ${window.location.port === "" ? '80' : window.location.port}</li><li>Result: ${window.location.port === "" ? 'https://ipV4:80' : window.location.host}</li></ul>`;
+    card.innerHTML = `LOCAL<ul><li>IP: ${window.location.hostname === "localhost"? 'ipV4' : window.location.hostname}</li><li>Mask: ${submask}</li><li>Port: ${window.location.port === "" ? '80' : window.location.port}</li><li>Result: ${window.location.port === "" ? 'http://ipV4:80' : window.location.host}</li></ul>`;
 }
 function fillSecondCard () {
     let card = document.getElementById('secondCard');
